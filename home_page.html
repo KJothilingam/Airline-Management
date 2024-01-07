@@ -1,91 +1,80 @@
-<!DOCTYPE html>>
-<html>
-    <head>
-        <titile>Book Flight | Airlines</titile>
-    </head>
-    <body>
-        <h1> AirLine Management System </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="book_css.css">
+</head>
+<body>
 
-        <b>
-            <a href="">Book</a> | 
-            <a href="">Manage</a> |
-            <a href="">Experence</a> |
-            <a href="">Where We Fly</a> | 
-            <a href="">Loyality</a> |
-            <a href="">Help</a>
-        </b>
+    <header>
+        <div class="container">
+            <h1>Flight Booking</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Flights</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <hr>
-
-        <center>
-
-            <h2>
-                Book a Flight
-            </h2>
-            <p >
-                Search for  flights and book online. See our routes and schedules, and discover more about the experience you can look forward to on board.
-            </p>
-        </center>
-        <fieldset>
-            <br>
-            <form>
-                <label for="start"><b>Departure Airpot</b></label><br>
-                <input type="text" id="start" >
-                <br><br>
-                <label for="end"><b>Arrival Airpot</b></label><br>
-                <input type="text" id="end">
-                <br>
-                <br>
-                <label for="date"><b>Date of Journey</b></label><br>
-                <input type="date" id="date">
-                <br>
-                <br>
-                <label for="count"><b>Passengers</b></label><br>
-                <select> 
-                    <option>1 Adult</option>
-                    <option>1 Children</option>
-                    <option>1 Infant</option>
+    <section class="booking-form">
+        <div class="container">
+            <form action="#" method="post">
+            
+                <label for="origin">From:</label>
+                <select id="destination" name="destination" required>
+                    <option value="" disabled selected>Select destination</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="bangalore">Bangalore</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="kolkata">Kolkata</option>
+                    <option value="ahmedabad">Ahmedabad</option>
                 </select>
-                <br>
-                <br>
-                <label for="class"><b>Class</b></label><br>
-                <select> 
-                    <option>Economy Class</option>
-                    <option>Premium Economy</option>
-                    <option>Business Class</option>
-                    <option>First Class/option>
+
+                <label for="destination">To:</label>
+                <select id="destination" name="destination" required>
+                    <option value="" disabled selected>Select destination</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="bangalore">Bangalore</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="kolkata">Kolkata</option>
+                    <option value="ahmedabad">Ahmedabad</option>
                 </select>
-                <br>
-                <br>
 
-                <button>
-                    Search Flights
-                </button>
+                <label for="departure-date">Departure Date:</label>
+                <input type="date" id="departure-date" name="departure-date" required>
 
+                <label for="passenger-count">Number of Passengers:</label>
+                <input type="number" id="passenger-count" name="passenger-count" min="1" required>
+
+                <label for="flight-class">Flight Class:</label>
+                <select id="flight-class" name="flight-class" required>
+                    <option value="economy">Economy</option>
+                    <option value="business">Business</option>
+                    <option value="first-class">First Class</option>
+                </select>
+
+                <input type="submit" value="Book Now">
             </form>
-            <br>
-        </fieldset>
-        <br>
-        <br>
-        <fieldset>
-            <legend><b>How to book a flight ticket</b> </legend>
-            <ul>
-                <li>
-                    <b>Book a flight ticket online</b></li>
-                    
-To find the right air ticket for your trip, just enter the location you’re flying from and your flight destination. Enter your dates, class of travel and the number of passengers. Select ’Search flights’ to continue with the online flight booking process and book a flight ticket that suits your travel plans.
-<br>
-<br>
-<li><b>Compare flight ticket fares</b></li>
-Look out for our Best Price Guarantee mark to make sure you’re getting the best flight ticket price when you book a flight with Emirates.
-</ul>
-</fieldset>
-<br>
-<hr>
-<a href="">Back to HomePage</a> >
-<a href="">Booka Flight</a>
-<hr>
+        </div>
+    </section>
 
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Flight Booking. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
